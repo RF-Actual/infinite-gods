@@ -1,29 +1,42 @@
-
-# Windows System Files
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# macOS System Files
+# Ignore system files
 .DS_Store
+Thumbs.db
+desktop.ini
 
-# Python artifacts
-__pycache__/
-*.py[cod]
-*.so
-*.egg
-
-# Editor directories and files
-.vscode/
-.idea/
-*.swp
-
-# Output directories
-/output/
-sandbox/
-mnt/
+# Ignore log files
 *.log
 
-# Markdown backup or temp
-*~
+# Ignore temporary or backup files
 *.tmp
+*.bak
+*.swp
+*.swo
+
+# Ignore zip archives (unless manually added for codex reasons)
+*.zip
+
+# Ignore VS Code and editor settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignore OS-specific files
+ehthumbs.db
+Icon?
+
+# Ignore node_modules or vendor
+node_modules/
+vendor/
+
+# Ignore backup text files
+*~
+*.old
+*.backup
+
+# Ignore filelist output artifacts
+filelist.txt
+file_structure.txt
+
+# Optional: Ignore archive export folders
+archive_temp/
+export/
